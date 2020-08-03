@@ -25,7 +25,7 @@ SECRET_KEY = '4+adx+l%yhmx%jgw%3r5#o195db)x42d)4-&ecocy*ju)4q01a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django_filters',
     'django.contrib.staticfiles',
     'Accounts',
-    'beneficiary',
+    'beneficiary'
 ]
 
 MIDDLEWARE = [
@@ -128,6 +128,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+#STATICFILES_FINDERS = (
+#'django.contrib.staticfiles.finders.FileSystemFinder',
+#'django.contrib.staticfiles.finders.AppDirectoriesFinder'
+#)
+#STATIC_ROOT = "/home/ubuntu/sih2020testing/static/"
+#STATIC_URL = '/static/'
+#STATICFILES_DIRS = [ os.path.join(BASE_DIR,'static') ]
+#STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [ os.path.join(BASE_DIR,'static') ]
-STATIC_ROOT = os.path.join(BASE_DIR,'assets')
+STATIC_ROOT=os.path.join(BASE_DIR, 'static')

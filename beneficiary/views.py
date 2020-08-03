@@ -67,7 +67,7 @@ def registerBen(request):
             cruser.save()
             
             account_sid = 'AC3239aa7e879998bb1ebb7be3a1a497fe'
-            auth_token = 'dacfe22a39522af85359b85df0b81eb7'
+            auth_token = '8d16a2cade7b63322f9b8710c7f68db4'
             client = Client(account_sid, auth_token)
            
 

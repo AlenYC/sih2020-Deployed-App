@@ -81,7 +81,7 @@
 								</div><!-- /.navbar-header-->
 								<div class="collapse navbar-collapse">		  
 									<ul class="nav navbar-nav navbar-right">
-										<li class="smooth"><a style ='color:white' href="#home">Home</a></li>
+										<li class="smooth"><a style ='color:white' href="{% url 'index' %}">Home</a></li>
 										<li class="smooth"><a href="{% url 'loginBen' %}">Beneficires</a></li>
 										<li class="smooth"><a href="{% url 'loginPage' %}">Health Worker </a></li>
 									
@@ -116,7 +116,7 @@
 									</h2>
 									<div class="about-btn">
 										<button  class="about-view">
-											Get Started
+										<a href="{% url 'loginPage' %}">	Get Started </a>
 										</button>
 									</div><!--/.about-btn-->
 								</div><!--/.about-us-txt-->
